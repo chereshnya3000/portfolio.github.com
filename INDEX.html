@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8" />
+  <title>Индикатор выполнения</title>
+  <style type="text/css">
+     .block{
+         display: inline-block;
+         width: 100px;
+         height: 30px;
+         border:1px solid black;
+         line-height: 30px;
+         padding: 0 5px 0 5px;
+     }
+     .block:nth-child(n+2){
+         margin-left: -5px;
+         border-left: none;
+     }
+     .block:nth-child(-n+2){
+         border-right: none;
+     }
+     .block1{
+         text-align: left; 
+         background: #ffff00;
+     }
+     .block2{
+         text-align: center;
+         background: linear-gradient(to left, transparent 50%, #ffff00 50%);
+     }
+     .block3{
+         text-align: right;
+     }
+
+	</style>
+  </head>
+    <body>
+        <div class="block block1">0</div>
+		<div class="block block2">50%</div>
+		<div class="block block3">5</div>
+		</body>
+</html>
